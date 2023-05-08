@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sigmar&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #666699 0%, #ccccff 100%);
+  background-attachment: fixed;
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+.block {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 5px 5px 4px grey;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ccccff 100%, #666699 0%);
+  width: 40%;
+}
+
+a {
+  color: rgb(153, 102, 255);
+  text-decoration: none;
+}
+a, p {
+  font-family: 'Sigmar', cursive;
+}
+
+#change-image {
+  background-image: url("images/pp_le_wagon.jpg");
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+#follow {
+  color: rgb(153, 255, 204);
+}
+
+a:hover {
+  color: brown;
+}
+
+.list-inline > li {
+  display: inline-block;
+  font-size: 50px;
+  padding-left: 0px;
+}
+
+li {
+  margin: 30px;
+}
+
+#change-image:hover {
+  background-image: url("images/pp.jpeg");
+}
+
+#hiking {
+  background-image: url("images/randonnée.jpg");
+}
+
+#cooking {
+  background-image: url("images/cooking.png");
+}
+
+#party {
+  background-image: url("images/fete.png");
+}
+
+.hover-image {
+  background-size: cover;
+  width: 160px;
+  height: 200px;
+  display: inline-block;
+}
+
+.hover-text {
+  color: white;
+  opacity: 0;
+  margin-top: 81px;
+}
+
+.hover-image:hover .hover-text {
+  opacity: 1;
+}
+
+
+#party:hover, #hiking:hover, #cooking:hover {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.logo {
+  margin: 10px;
+}
+
+@media (max-width: 960px) {
+  .block {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .block {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .block {
+    width: 300px;
+  }
+}
